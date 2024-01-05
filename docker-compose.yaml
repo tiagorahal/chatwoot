@@ -82,6 +82,7 @@ services:
    ports:
      - "3035" # Webpack dev server
    environment:
+     - NODE_OPTIONS=--openssl-legacy-provider
      - WEBPACKER_DEV_SERVER_HOST=0.0.0.0
      - NODE_ENV=development
      - RAILS_ENV=development
